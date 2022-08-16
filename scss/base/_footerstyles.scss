@@ -1,0 +1,21 @@
+/*estilo de footer*/
+body{
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    width: 100%;
+    display: block;
+    padding: 30px;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    clear: both;
+    text-align: center; 
+    background-image:linear-gradient(to top, #9a8d82 0%,rgba(241,236,229,0.2) 80%) ;
+    margin-bottom: 0;
+    position: absolute;
+    color: #766c63;
+
+}

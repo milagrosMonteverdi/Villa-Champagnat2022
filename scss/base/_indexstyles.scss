@@ -1,0 +1,160 @@
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+
+
+
+/*estilos de navbar*/
+body nav div div ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 100px;
+    padding: 25px;
+    justify-content: space-evenly;
+}
+body{
+    background-color:rgba(223, 218, 211, 0.2);
+}
+header nav div li{
+    margin-right: 25px;
+
+}
+header nav div{
+    margin-right: 12px;
+}
+
+
+.fondo-nav{
+    width:100%;
+    background: linear-gradient(to bottom, #9a8d82 0%,rgba(241,236,229,0.2) 80%);
+    .navbar{
+        width:100%;
+    }
+}
+/*estilos del logo*/
+nav div a{
+    text-decoration: none;
+    color: #514a44;
+    box-shadow: none;
+}
+nav div a :hover{
+    color: rgb(135, 132, 132);
+}
+nav div div li :hover{
+    text-decoration-line: underline; 
+    transition: all 0.5s ease;      
+}
+/*estilos de main index*/
+main{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: grey;
+    .mainP{
+        margin:20px;
+    }
+    .imagen1 .descripcionVistafrente{
+        margin:20px;
+    }
+   
+}
+.descripcionVistafrente{
+    font-size: 25px;
+    font-family: bembo-italic;
+    color: #9a8d82;
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+/* estilos de fuentes*/
+.mainH1 h1{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #9a8d82;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    padding-bottom: 25px;
+    white-space: nowrap;
+}
+
+@media (max-width:668px){
+    .mainH1 h1{
+        font-size: 1.2rem;
+    }
+}
+.mainH1 .mainP{
+    font-size: 25px;
+    font-family: bembo-italic;
+    color: #9a8d82;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 668px){
+.mainH1 .mainP{
+    font-family: bembo-italic;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.mainH1 .descripcionVistafrente{
+    font-family: bembo-italic;
+    font-size: 20px;
+    margin-bottom: 40px;
+
+}
+}
+
+main div img{
+    width:100%;
+}
+
+h1, h2{
+    line-height: 1.1;
+}
+h1 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.descripcionVistafrente{
+    margin: 50px;
+    font-size: 25px;
+    font-family: bembo-italic;
+    color: #9a8d82;
+    text-align: center; 
+}
+/*pantalla mas chicas*/
+@media (max-width:390px){
+    .mainH1 h1{
+        font-size: 15px;
+    }
+    .mainH1 .mainP{
+        font-family: bembo-italic;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+    .mainH1
+    
+    
+    .descripcionVistafrente{
+        font-family: bembo-italic;
+        font-size: 15px;
+        margin-bottom: 40px;
+    
+    } 
+}
+/*estilo del menu hambuerguesa*/
+.navbar-toggler{
+    margin-right: 10px;
+}

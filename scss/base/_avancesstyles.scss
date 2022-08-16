@@ -1,0 +1,31 @@
+.avancesimg{
+    margin-bottom: 80px;
+
+}
+@media screen and (max-width:350px){
+    p.col-6{
+        display: none;
+    }
+    h1.col-12.text-center{
+        font-size: 1.2rem;
+        color: aqua;
+}
+}
+
+h1.col-12.text-center{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #9a8d82;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    padding-bottom: 25px;
+    white-space: nowrap;
+}
+.col-6{
+    font-family: bembo-italic;
+    color: #9a8d82;
+    font-size: 20px;
+
+}

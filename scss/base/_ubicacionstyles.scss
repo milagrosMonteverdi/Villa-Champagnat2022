@@ -1,0 +1,33 @@
+/*estilos de ubicacion*/
+.textoUbicacion{
+    font-family: museo-sans;
+    font-size: 22px;
+    color: #808080;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.mainH1 .mapa img{
+    margin:20px;
+    width:60%; 
+}
+.mainH1 .textoUbicacion{
+    @include ubicacion;
+}
+.mainH1 .mapa{
+    @include ubicacion;
+    padding:1px;
+}
+
+@media (max-width:668px){
+    .mainH1 p{
+        font-size: 10px;
+    }
+    .mainH1 .textoUbicacion{
+        font-family: bembo-italic;
+        background-color: #f3f2f2;
+        margin: 0;
+        padding: 5px;
+        color: #9a8d82;
+        
+    }
+}
