@@ -214,7 +214,12 @@ body .unidadesH1 {
 
 .mainP {
   grid-area: mainP;
-  font-size: 25px; }
+  font-size: 25px;
+  font-family: bembo-italic;
+  color: #9a8d82;
+  text-align: center;
+  margin-bottom: 35px;
+  margin: 20px; }
 
 .unidad1 {
   grid-area: unidad1; }
