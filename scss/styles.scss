@@ -1,0 +1,322 @@
+@import"base/variables";
+@import"base/mixin";
+@import"base/maps";
+@import"base/extend";
+
+
+
+/*estilos de navbar*/
+body nav div div ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 100px;
+    padding: 25px;
+    justify-content: space-evenly;
+}
+body{
+    background-color: rgba(241, 236, 229, 0.2);
+}
+header nav div li{
+    margin-right: 25px;
+
+}
+header nav div{
+    margin-right: 12px;
+}
+
+
+.fondo-nav{
+    width:100%;
+    background: linear-gradient(to bottom, #9a8d82 0%,rgba(241,236,229,0.2) 80%);
+    .navbar{
+        width:100%;
+    }
+}
+/*estilos del logo*/
+nav div a{
+    text-decoration: none;
+    color: #333;
+    box-shadow: none;
+}
+nav div a :hover{
+    color: rgb(135, 132, 132);
+}
+nav div div li :hover{
+    text-decoration-line: underline; 
+    transition: all 0.5s ease;      
+}
+/*estilo de footer*/
+.footer{
+    width: 100%;
+    display: block;
+    padding: 30px;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    clear: both;
+    text-align: center;
+    position: absolute;  
+    background-image:linear-gradient(to top, #9a8d82 0%,rgba(241,236,229,0.2) 80%) ;
+}
+
+
+main div img{
+    width:100%;
+}
+body .unidadesH2{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: grey; 
+
+}
+/*estilos de main index*/
+main{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: grey;
+    .mainP{
+        margin:20px;
+    }
+    .imagen1 .descripcionVistafrente{
+        margin:20px;
+    }
+   
+}
+/*estilos de unidades*/
+.unidades .descripcionU{
+    margin:20px;
+}
+.unidades .masinfo{
+    margin:40px;
+}
+/*estilos de ubicacion*/
+.textoUbicacion{
+    font-family: museo-sans;
+    font-size: 22px;
+    color: #808080;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.mainH2 .mapa img{
+    margin:20px;
+    width:60%; 
+}
+.mainH2 .textoUbicacion{
+    @include ubicacion;
+}
+.mainH2 .mapa{
+    @include ubicacion;
+    padding:1px;
+}
+/*estilos de quienes somos*/
+.mainH2 .historiaH2{
+    margin: 30px;
+}
+body .mainH2{
+    padding: 30px;
+    padding-top: 0;
+}
+
+/*estilos de contactanos*/
+main .formulario{
+    background-color:$color-principal;
+    margin:30px;
+    padding:15px;
+    margin-bottom: 95px;
+}
+main .formulario .form1{
+    margin: 10px;
+}
+main .formulario .form2{
+    margin: 10px;
+}
+main .formulario .form3{
+    margin: 10px;
+}
+/*estilos de mas info unidades mapas*/
+.unidades .masInfo{
+    .standar{
+        color: map-get($map:$boton-standar , $key: color-standar);    
+    }
+}
+
+/*grid  seccion unidades*/
+.unidades{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas:"descripcionU descripcionU"
+                        "unidad1 unidad2"
+                        "unidad3 unidad4"
+                        "masInfo masInfo" ;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    margin: 25px;
+}
+.descripcionU{
+    grid-area: descripcionU;
+}
+.unidad1{
+    grid-area: unidad1;
+}
+.unidad2{
+    grid-area: unidad2;
+}
+.unidad3{
+    grid-area: unidad3;
+}
+.unidad4{
+    grid-area: unidad4;
+}
+.masInfo{
+    grid-area: masInfo;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* media queris pantalla chica*/
+@media screen and (max-width:500px) {
+    .descripcionU{
+      display: none;
+    }
+    .unidades{
+      display: grid;
+      grid-template-columns: auto ;
+      grid-template-rows: auto auto auto auto ;
+      grid-template-areas:"descripcionU "
+                          "unidad1"
+                          "unidad2"
+                          "unidad3"
+                          "unidad4"
+                          "masInfo" ;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      gap: 30px;
+      margin: 25px;
+  }
+  .descripcionU{
+      grid-area: descripcionU;
+  }
+  .unidad1{
+      grid-area: unidad1;
+  }
+  .unidad2{
+      grid-area: unidad2;
+  }
+  .unidad3{
+      grid-area: unidad3;
+  }
+  .unidad4{
+      grid-area: unidad4;
+  }
+  .masInfo{
+      grid-area: masInfo;
+      text-align: center;
+      font-size: 1.2rem;
+  }
+}
+  
+/*boton mas info*/
+.unidades .masInfo{ 
+        @extend %botones;
+}
+main form .submit{
+    @extend %botones;
+}
+/* estilos de fuentes*/
+.mainH2 h2{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #9a8d82;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    padding-bottom: 25px;
+    white-space: nowrap;
+}
+@media (max-width:668px){
+    .mainH2 h2{
+        font-size: 1.2rem;
+    }
+}
+.mainH2 .mainP{
+    font-size: 25px;
+    font-family: bembo-italic;
+    color: #9a8d82;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.descripcionVistafrente{
+    font-size: 25px;
+    font-family: bembo-italic;
+    color: #9a8d82;
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+@media screen and (max-width: 668px){
+.mainH2 .mainP{
+    font-family: bembo-italic;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.mainH2 .descripcionVistafrente{
+    font-family: bembo-italic;
+    font-size: 18px;
+    margin-bottom: 40px;
+
+}
+}
+
+h1, h2{
+    line-height: 1.1;
+}
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.descripcionVistafrente{
+    margin: 50px;
+    font-size: 25px;
+    font-family: bembo-italic;
+    color: #9a8d82;
+    text-align: center; 
+}
+/*pantalla mas chicas*/
+@media (max-width:390px){
+    .mainH2 h2{
+        font-size: 10px;
+    }
+    .mainH2 .mainP{
+        font-family: bembo-italic;
+        font-size: 10px;
+        margin-bottom: 40px;
+    }
+    .mainH2 .descripcionVistafrente{
+        font-family: bembo-italic;
+        font-size: 10px;
+        margin-bottom: 40px;
+    
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
