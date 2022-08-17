@@ -83,6 +83,7 @@ main{
     letter-spacing: 3px;
     padding-bottom: 25px;
     white-space: nowrap;
+  
 }
 
 @media (max-width:668px){
@@ -117,14 +118,12 @@ main div img{
 }
 
 h1, h2{
-    line-height: 1.1;
-}
-h1 {
     display: block;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    line-height: 1.1;
 }
 
 .descripcionVistafrente{
