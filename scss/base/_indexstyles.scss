@@ -74,7 +74,19 @@ main{
 
 /* estilos de fuentes*/
 .mainH1 h1{
-    font-size: 1.5rem;
+    font-size: 2vw;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #9a8d82;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    padding-bottom: 25px;
+    white-space: nowrap;
+  
+}
+.mainH1 h2.construimos{
+    font-size: 4vw;
     margin-top: 15px;
     text-transform: uppercase;
     font-weight: 100;
@@ -86,11 +98,13 @@ main{
   
 }
 
-@media (max-width:668px){
-    .mainH1 h1{
-        font-size: 1.2rem;
-    }
+
+
+/*estilo del menu hambuerguesa*/
+.navbar-toggler{
+    margin-right: 10px;
 }
+
 .mainH1 .mainP{
     font-size: 25px;
     font-family: bembo-italic;
@@ -132,28 +146,4 @@ h1, h2{
     font-family: bembo-italic;
     color: #9a8d82;
     text-align: center; 
-}
-/*pantalla mas chicas*/
-@media (max-width:390px){
-    .mainH1 h1{
-        font-size: 15px;
-    }
-    .mainH1 .mainP{
-        font-family: bembo-italic;
-        font-size: 15px;
-        margin-bottom: 40px;
-    }
-    .mainH1
-    
-    
-    .descripcionVistafrente{
-        font-family: bembo-italic;
-        font-size: 15px;
-        margin-bottom: 40px;
-    
-    } 
-}
-/*estilo del menu hambuerguesa*/
-.navbar-toggler{
-    margin-right: 10px;
 }
