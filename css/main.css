@@ -71,7 +71,7 @@ main {
 
 /* estilos de fuentes*/
 .mainH1 h1 {
-  font-size: 2vw;
+  font-size: 3vw;
   margin-top: 15px;
   text-transform: uppercase;
   font-weight: 100;
@@ -82,7 +82,7 @@ main {
   white-space: nowrap; }
 
 .mainH1 h2.construimos {
-  font-size: 4vw;
+  font-size: 2.5vw;
   margin-top: 15px;
   text-transform: uppercase;
   font-weight: 100;
@@ -140,22 +140,21 @@ h1, h2 {
   text-align: center; }
 
 .mainH1 .mapa img {
-  margin: 20px;
   width: 60%; }
 
 .mainH1 .textoUbicacion {
   background-color: #f3f2f2;
   justify-content: center;
-  margin: 50px;
-  margin-top: 25px;
-  padding: 25px; }
+  margin: 5px;
+  margin-top: 15px;
+  padding: 5px; }
 
 .mainH1 .mapa {
   background-color: #f3f2f2;
   justify-content: center;
-  margin: 50px;
-  margin-top: 25px;
-  padding: 25px;
+  margin: 5px;
+  margin-top: 15px;
+  padding: 5px;
   padding: 1px; }
 
 @media (max-width: 668px) {
@@ -178,7 +177,7 @@ h1, h2 {
 body .unidadesH1 {
   text-align: center;
   font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
+  font-size: 3vw;
   margin-top: 15px;
   text-transform: uppercase;
   font-weight: 100;
@@ -197,15 +196,15 @@ body .unidadesH1 {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: "mainP mainP" "unidad1 unidad2" "unidad3 unidad4" "masInfo masInfo";
+  grid-template-areas: "descripcionU descripcionU" "unidad1 unidad2" "unidad3 unidad4" "masInfo masInfo";
   justify-content: center;
   justify-items: center;
   align-items: center;
   gap: 30px;
   margin: 25px; }
 
-.mainP {
-  grid-area: mainP;
+.descripcionU {
+  grid-area: descripcionU;
   font-size: 25px;
   font-family: bembo-italic;
   color: #9a8d82;
@@ -237,8 +236,8 @@ body .unidadesH1 {
   .unidades {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "descripcionU " "unidad1" "unidad2" "unidad3" "unidad4" "masInfo";
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "descripcionU" "unidad1" "unidad2" "unidad3" "unidad4" "masInfo";
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -261,20 +260,18 @@ body .unidadesH1 {
 
 /* media queris pantalla mediana*/
 @media screen and (max-width: 778px) {
-  .descripcionU {
-    display: none; }
   .unidades {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "mainP " "unidad1" "unidad2" "unidad3" "unidad4" "masInfo";
+    grid-template-areas: "descripcionU" "unidad1" "unidad2" "unidad3" "unidad4" "masInfo";
     justify-content: center;
     justify-items: center;
     align-items: center;
     gap: 30px;
     margin: 25px; }
-  .mainP {
-    grid-area: mainP; }
+  .descripcionU {
+    grid-area: descripcionU; }
   .unidad1 {
     grid-area: unidad1; }
   .unidad2 {
@@ -290,8 +287,6 @@ body .unidadesH1 {
 
 /* media queris pantalla mediana plus*/
 @media screen and (max-width: 820px) {
-  .descripcionU {
-    display: none; }
   .unidades {
     display: grid;
     grid-template-columns: auto;
@@ -406,6 +401,17 @@ body .mainH1 {
   padding: 30px;
   padding-top: 0; }
 
+.mainH1 h2 {
+  font-size: 3vw;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #9a8d82;
+  white-space: nowrap;
+  letter-spacing: 3px;
+  padding-bottom: 25px;
+  white-space: nowrap; }
+
 /*estilo de footer*/
 body {
   height: auto;
@@ -426,20 +432,16 @@ body {
   position: absolute;
   color: #766c63; }
 
-.avancesimg {
-  margin-bottom: 80px; }
-
 @media screen and (max-width: 350px) {
   p.col-6 {
     display: none; }
   h1.col-12.text-center {
-    font-size: 1.2rem;
-    color: aqua; }
-  div .row {
-    background-color: aqua; } }
+    font-size: 1.2rem; }
+  .container div .avancesimg img {
+    margin: 15px; } }
 
 h1.col-12.text-center {
-  font-size: 2vw;
+  font-size: 3vw;
   margin-top: 15px;
   text-transform: uppercase;
   font-weight: 100;

@@ -7,9 +7,9 @@
     text-align: center;
 }
 .mainH1 .mapa img{
-    margin:20px;
     width:60%; 
 }
+
 .mainH1 .textoUbicacion{
     @include ubicacion;
 }

@@ -1,23 +1,18 @@
-.avancesimg{
-    margin-bottom: 80px;
 
-}
 @media screen and (max-width:350px){
     p.col-6{
         display: none;
     }
     h1.col-12.text-center{
         font-size: 1.2rem;
-        color: aqua;
     }
-    div .row{
-        background-color: aqua;
+    .container div .avancesimg img{
+        margin: 15px;
     }
-
 }
 
 h1.col-12.text-center{
-    font-size: 2vw;
+    font-size: 3vw;
     margin-top: 15px;
     text-transform: uppercase;
     font-weight: 100;
